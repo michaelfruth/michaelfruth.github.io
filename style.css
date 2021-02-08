@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(20, 20, 20);
+    font-family: serif;
+    color: #e0e0e0;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+h3 {
+    color: #ff9500;
+    font-variant: small-caps;
+}
+
+h4 {
+    color: #ffc97d;
+    font-family: monospace;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed #ff9500;
+}
+
+.teaching-container {
+    width: fit-content;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td:nth-child(1) {
+    width: 130px;
+}
+
+table td:first-child {
+    padding-left: 5px;
+}
+
+table td:last-child {
+    padding-right: 5px;
+}
+
+table tr {
+    margin-left: 5px;
+}
+
+.table-color tr:nth-child(odd) {
+    background: rgb(45, 45, 45);
+}
