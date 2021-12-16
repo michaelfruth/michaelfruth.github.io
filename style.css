@@ -1,29 +1,93 @@
 body {
-    background-color: rgb(20, 20, 20);
+    background-color: #141414;
     font-family: serif;
-    color: #e0e0e0;
+    color: #f7f7f7;
     width: 96%;
     margin: auto;
     padding-bottom: 20px;
 }
 
 h3 {
-    color: #ff9500;
+    color: #ff6600;
     font-variant: small-caps;
 }
 
 h4 {
-    color: #ffc97d;
+    color: #ff9500;
     font-family: monospace;
 }
 
 hr {
     border: 0;
-    border-top: 1px dashed #ff9500;
+    border-top: 1px dashed #ff6600;
+}
+
+a:link, a:visited {
+    color: #ffc97d;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+.fa-fw {
+    margin: 4px 0;
+    margin-right: 3px;
+}
+
+.paper-list-outer {
+    list-style: none;
+}
+
+.paper-list-outer > li > ul {
+    /* Repro. Package / Supplementary Material */
+    list-style: none;
+}
+
+.paper-list-outer > li > ul > li:before {
+    content: "\2022"; /* Circle */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 .title {
-    font-family: italic;
+    position: relative;
+    margin: 0 0.5em;
+    padding: 0 0.2em;
+    color: black;
+}
+
+.title:before {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: 0.1em;
+    border-width: 0.5em;
+    border-style: solid;
+    border-color: #ffc97d;
+    position: absolute;
+    width:calc(100% - 0.5em);
+    border-left-color: transparent;
+}
+
+.title:after {
+    content: "";
+    z-index: -1;
+    right: 0;
+    top: 0.1em;
+    border-width: 0.5em;
+    border-style: solid;
+    border-color: #ffc97d;
+    position: absolute;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform:rotate(180deg);
+    transform-origin: center right;
 }
 
 .teaching-container {
@@ -54,3 +118,5 @@ table tr {
 .table-color tr:nth-child(odd) {
     background: rgb(45, 45, 45);
 }
+
+

@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="Font-Awesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="Font-Awesome/css/brands.min.css" rel="stylesheet">
+    <link href="Font-Awesome/css/solid.min.css" rel="stylesheet">
+    <link href="Font-Awesome/css/regular.min.css" rel="stylesheet">
 </head>
 
 <body>
-
     <h3>About Me:</h3>
     <p>
         I am a PhD student at the Chair of Scalable Database Systems at the University of Passau.
@@ -18,53 +21,85 @@
     <h3>Research Publications:</h3>
 
     <h4>2021:</h4>
-    <ul>
+    <ul class="paper-list-outer">
         <li>
             <span class="title">A Test Suite for JSON Schema Containment</span><br>
-            Lyes Attouche, Mohamed-Amine Baazizi, Dario Colazzo, Yunchen Ding, Michael Fruth, Giorgio Ghelli, Carlo Sartiani, Stefanie Scherzinger<br>
-            Demo at ER 2021.
+            <i class="far fa-fw fa-user"></i>Lyes Attouche, Mohamed-Amine Baazizi, Dario Colazzo, Yunchen Ding, Michael Fruth, Giorgio Ghelli, Carlo Sartiani, Stefanie Scherzinger<br>
+            <i class="far fa-fw fa-location-arrow"></i>Demo at ER 2021<br>
+            <i class="far fa-fw fa-file"></i>Print: <a href="http://ceur-ws.org/Vol-2958/paper4.pdf">http://ceur-ws.org/Vol-2958/paper4.pdf</a><br>
+            <i class="fas fa-fw fa-hammer"></i>Reproduction Package:
+            <ul>
+                <li><i class="fab fa-fw fa-github"></i>GitHub: <a href="https://github.com/sdbs-uni-p/json-schema-containment-testsuite">https://github.com/sdbs-uni-p/json-schema-containment-testsuite</a></li>
+            </ul>
+            <i class="far fa-fw fa-tools"></i>Demo: <a href="https://er2021demojsctestsuite.nw.r.appspot.com">https://er2021demojsctestsuite.nw.r.appspot.com</a>
         </li>
     </ul>
 
-    <ul> 
+    <ul class="paper-list-outer"> 
         <li>
             <span class="title">New Workflows in NoSQL Schema Management</span><br>
-            Michael Fruth, Kai Dauberschmidt, Stefanie Scherzinger<br>
-            SEAData@VLDB 2021.
+            <i class="far fa-fw fa-user"></i>Michael Fruth, Kai Dauberschmidt, Stefanie Scherzinger<br>
+            <i class="far fa-fw fa-location-arrow"></i>SEAData@VLDB 2021<br>
+            <i class="far fa-fw fa-file"></i>Print: <a href="http://ceur-ws.org/Vol-2929/poster1.pdf">http://ceur-ws.org/Vol-2929/poster1.pdf</a><br>
         </li>
     </ul>
         
-    <ul>
+    <ul class="paper-list-outer">
         <li>
             <span class="title">Tell-Tale Tail Latencies: Pitfalls and Perils in Database Benchmarking</span><br>
-            Michael Fruth, Stefanie Scherzinger, Wolfgang Mauerer, Ralf Ramsauer<br>
-            TPCTC@VLDB 2021.
+            <i class="far fa-fw fa-user"></i>Michael Fruth, Stefanie Scherzinger, Wolfgang Mauerer, Ralf Ramsauer<br>
+            <i class="far fa-fw fa-location-arrow"></i>TPCTC@VLDB 2021<br>
+            <i class="far fa-fw fa-file"></i>DOI: pending<br>
+            <i class="far fa-fw fa-file"></i>Pre-Print: <a href="https://arxiv.org/abs/2107.11607">https://arxiv.org/abs/2107.11607</a><br>
+            <i class="fas fa-fw fa-hammer"></i>Reproduction Package:
+            <ul>
+                <li><i class="fab fa-fw fa-github"></i> GitHub: <a href="https://github.com/sdbs-uni-p/tpctc2021">https://github.com/sdbs-uni-p/tpctc2021</a></li>
+                <li>Zenodo: <a href="https://zenodo.org/record/5112729#.YbsZ0C1Q1A0">https://zenodo.org/record/5112729#.YbsZ0C1Q1A0</a></li>
+            </ul>
         </li>
     </ul>
 
-    <ul>
+    <ul class="paper-list-outer">
         <li>
             <span class="title">Josch: Managing Schemas for NoSQL Document Stores</span><br>
-            Michael Fruth, Kai Dauberschmidt, Stefanie Scherzinger<br>
-            Demo at ICDE 2021.
+            <i class="far fa-fw fa-user"></i>Michael Fruth, Kai Dauberschmidt, Stefanie Scherzinger<br>
+            <i class="far fa-fw fa-location-arrow"></i>Demo at ICDE 2021<br>
+            <i class="far fa-fw fa-file"></i>DOI: <a href="https://doi.org/10.1109/ICDE51399.2021.00306">10.1109/ICDE51399.2021.00306</a><br>
+            <i class="fas fa-fw fa-hammer"></i>Reproduction Package:
+            <ul>
+                <li><i class="fab fa-fw fa-github"></i> GitHub: <a href="https://github.com/sdbs-uni-p/josch">https://github.com/sdbs-uni-p/josch</a></li>
+                <li>Zenodo: <a href="https://zenodo.org/record/5155117#.YbsVoS1Q1A0">https://zenodo.org/record/5155117#.YbsVoS1Q1A0</a></li>
+            </ul>
+            <i class="far fa-fw fa-tools"></i>Demo: <a href="http://josch-304409.ey.r.appspot.com">http://josch-304409.ey.r.appspot.com</a>
         </li>
     </ul>
 
-    <ul>
+    <ul class="paper-list-outer">
         <li>
             <span class="title">Toolunterstützung für den Übungsbetrieb in der Datenbanklehre: Erfahrungen mit der Software <i>Praktomat</i></span><br>
-            Christina Ehrlinger, Thomas Fritsch, Michael Fruth, Franz Lehner, Stefanie Scherzinger<br>
-            Datenbank-Spektrum journal 2021.
+            <i class="far fa-fw fa-user"></i>Christina Ehrlinger, Thomas Fritsch, Michael Fruth, Franz Lehner, Stefanie Scherzinger<br>
+            <i class="far fa-fw fa-location-arrow"></i>Datenbank-Spektrum journal 2021<br>
+            <i class="far fa-fw fa-file"></i>DOI: <a href="https://doi.org/10.1007/s13222-021-00374-y">10.1007/s13222-021-00374-y</a><br>
+            <i class="fas fa-fw fa-hammer"></i>Supplementary Material: 
+            <ul>
+                <li><i class="fab fa-fw fa-github"></i> GitHub: <a href="https://github.com/sdbs-uni-p/praktomat-for-radb-and-psql">https://github.com/sdbs-uni-p/praktomat-for-radb-and-psql</a></li>
+                <li><i class="fab fa-fw fa-github"></i> GitHub: <a href="https://github.com/sdbs-uni-p/praktomat-questionnaire-sose-2020">https://github.com/sdbs-uni-p/praktomat-questionnaire-sose-2020</a></li>
+            </ul>
         </li>
     </ul>
 
 
     <h4>2020:</h4>
-    <ul>
+    <ul class="paper-list-outer">
         <li>
             <span class="title">Challenges in Checking JSON Schema Containment over Evolving Real-World Schemas</span><br>
-            Michael Fruth, Mohamed-Amine Baazizi, Dario Colazzo, Giorgio Ghelli, Carlo Sartiani and Stefanie Scherzinger<br>
-            EmpER@ER 2020.
+            <i class="far fa-fw fa-user"></i>Michael Fruth, Mohamed-Amine Baazizi, Dario Colazzo, Giorgio Ghelli, Carlo Sartiani and Stefanie Scherzinger<br>
+            <i class="far fa-fw fa-location-arrow"></i>EmpER@ER 2020<br>
+            <i class="far fa-fw fa-file"></i>DOI: <a href="https://doi.org/10.1007/978-3-030-65847-2_20">10.1007/978-3-030-65847-2_20</a><br>
+            <i class="fas fa-fw fa-hammer"></i>Reproduction Package: 
+            <ul>
+                <li><i class="fab fa-fw fa-github"></i> GitHub: <a href="https://github.com/michaelfruth/jsc-study">https://github.com/michaelfruth/jsc-study</a></li>
+            </ul>
         </li>
     </ul>
 
