@@ -37,16 +37,31 @@ a:hover, a:active {
     margin-right: 3px;
 }
 
-.paper-list-outer {
+.paper-year-list {
     list-style: none;
 }
 
-.paper-list-outer > li > ul {
+.paper-year-list > li {
+    padding-top: 25px;
+}
+
+.paper-year-list > li:first-child {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.paper-publication-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.paper-publication-list > li > ul {
     /* Repro. Package / Supplementary Material */
     list-style: none;
 }
 
-.paper-list-outer > li > ul > li:before {
+.paper-publication-list > li > ul > li:before {
     content: "\2022"; /* Circle */
     font-weight: bold;
     display: inline-block;
@@ -54,38 +69,42 @@ a:hover, a:active {
     margin-left: -1em;
 }
 
+.paper-publication-list > li:first-child {
+    /* Title */
+    margin-bottom: 0.6em;
+}
+
 .title {
     position: relative;
-    margin: 0 0.5em;
-    padding: 0 0.2em;
+    padding-left: 20px;
+    padding-right: 0;
+    margin: 0 0;
 }
 
 .title:before {
     content: "";
     z-index: -1;
-    left: -0.5em;
-    top: 0.03em;
-    border-width: 0.5em;
+    left: 0;
+    top: -0.4em;
+    border-width: 1em;
     border-style: solid;
     border-color: #444444;
     position: absolute;
-    width:calc(100% - 0.5em);
+    width: calc(100% - 2em);
     border-left-color: transparent;
 }
 
 .title:after {
     content: "";
     z-index: -1;
-    right: -0.02em;
-    top: 0.03em;
-    border-width: 0.5em;
+    right: 0.67em;
+    top: -0.4em;
+    border-width: 1em;
     border-style: solid;
     border-color: #444444;
     position: absolute;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
     border-left-color: transparent;
-    transform:rotate(180deg);
+    transform: rotate(180deg);
     transform-origin: center right;
 }
 
